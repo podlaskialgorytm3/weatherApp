@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8eda9583ac.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Indie+Flower&family=M+PLUS+1:wght@100&family=Montserrat:wght@100&family=Nunito:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main"></div>
+    <input class="search" type="text">
+    <button class="btn"><img src="img/magnifier.png" alt=""></button>
+    <div class="weatherMain">
+    <div class="weatherMenu">
+        <h1 class="cityName">Korczew</h1>
+        <h1 class="countryName">(PL)</h1>
+        <h4 class="date">21/12/2021</h4>
+        <div class="tempAndWeather"><div class="temperature">4*C</div>
+        <p class="weatherStatus">Clouds</p></div>
+        <img class="weatherPhoto" alt="obrazek pogody">
+    </div>
+    <div class="weatherContent">
+        <div class="weatherChild sunriseContent">Wschód Słońca</div>
+        <div class="weatherChild sunsetContent">Zachód Słońca</div>
+        <div class="weatherChild sunrise"></div>
+        <div class="weatherChild sunset"></div>
+        <div class="weatherChild pressureContent">Ciśnienie</div>
+        <div class="weatherChild humidityContent">Wilgotność</div>
+        <div class="weatherChild pressure"></div>
+        <div class="weatherChild humidity"></div>
+        <div class="weatherChild windContent">Prędkość wiatru</div>
+        <div class="weatherChild windDirectionContent">Kierunek wiatru</div>
+        <div class="weatherChild wind"></div>
+        <div class="weatherChild "><img class="windDirection" src="img/directionIMG.png" alt=""></div>
+        
+    </div>
+    <div class="nextDays">
+        <div class="nextDay">
+            <h3 class="DOW">Jutro</h3>
+            <div class="contentAll">
+            <div class="contentDOW">
+            <img  alt="ikona pogody" class="iconDOW">
+            <div class="descriptionDOW"></div></div>
+            <div class="tempDOW"></div>
+            </div>
+            
+            
+        </div>
+        <div class="nextDay">
+            <h3 class="DOW">Po jutrze</h3>
+            <div class="contentAll">
+                <div class="contentDOW">
+                <img  alt="ikona pogody" class="iconDOW">
+                <div class="descriptionDOW"></div></div>
+                <div class="tempDOW"></div>
+                </div>
+            
+           
+        </div>
+        <div class="nextDay">
+            <h3 class="DOW">Za trzy dni</h3>
+            <div class="contentAll">
+                <div class="contentDOW">
+                <img  alt="ikona pogody" class="iconDOW">
+                <div class="descriptionDOW"></div></div>
+                <div class="tempDOW"></div>
+                </div>
+            
+           
+        </div>
+        <div class="nextDay">
+            <h3 class="DOW">Za cztery dni</h3>
+            <div class="contentAll">
+                <div class="contentDOW">
+                <img  alt="ikona pogody" class="iconDOW">
+                <div class="descriptionDOW"></div></div>
+                <div class="tempDOW"></div>
+                </div>
+           
+            
+        </div>
+        <div class="nextDay">
+            <h3 class="DOW">Za pięć dni</h3>
+            <div class="contentAll">
+                <div class="contentDOW">
+                <img  alt="ikona pogody" class="iconDOW">
+                <div class="descriptionDOW"></div></div>
+                <div class="tempDOW"></div>
+                </div>
+            
+            
+        </div>
+        
+    </div>
+</div>
+<div class="popupError">Podana nazwa miasta nie istnieje<i class="fas fa-times"></i></div>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

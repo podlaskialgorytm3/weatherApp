@@ -1,0 +1,355 @@
+*
+{
+    margin:0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Comfortaa', cursive;
+    color: white;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200vh;
+    background-image: url("img/deflautBackgroudn4K.jpg");
+    background-position: center;
+    background-size: 200%;
+    background: royalblue;
+    animation: changeColor 20s linear infinite;
+}
+@keyframes changeColor
+{
+    0%
+    {
+        background-color: royalblue;
+    }
+    25% 
+    {
+        background-color: rgb(90, 122, 216);
+    }
+    50% 
+    {
+        background-color: skyblue;
+    }
+    75%
+    {
+        background-color: rgb(90, 122, 216);
+    }
+    100%
+    {
+        background-color: royalblue;
+    }
+}
+div.weatherMain
+{
+    width: 100vw;
+    height: 175vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+div.weatherMenu
+{
+    height: 120px;
+    width: 90vw;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+/* Weather Menu */
+h1
+{
+    font-size: 20px;
+    display: inline-block;
+}
+div.temperature
+{
+    
+    font-size: 40px;
+}
+p.weatherStatus
+{
+ font-size: 17px;
+}
+img.weatherPhoto
+{
+    position: absolute;
+    left: 2%;
+    top: 70%;
+    width: 100px;
+}
+/* End weather menu */
+div.weatherContent
+{
+    margin-top: 40px;
+    height: 300px;
+    width: 90vw;
+    background-color: rgba(0, 0, 0, 0.308);
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Weather Content Child*/
+div.weatherChild
+{
+   width: calc(90vw / 2);
+   height: calc(300px / 6);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+/* Weather Content Child End */
+div.nextDays
+{
+    margin-top: 20px;
+    height: 120vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 40px;
+    box-sizing: content-box;
+}
+div.nextDay
+{
+    width: 100%;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.246);
+}
+/* customize days */
+h3.DOW
+{
+    margin-top: 5px;
+    margin-left: 15px;
+}
+img.iconDOW
+{
+    width: 70px;
+}
+div.contentDOW
+{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-left: 30px;
+}
+div.contentAll
+{
+    display: flex;
+    justify-content: space-between;
+}
+div.tempDOW
+{
+    font-size: 35px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input.search
+{
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 10px;
+    right: 5%;
+    top:5%;
+    height: 30px;
+    width: 200px;
+    background: rgba(0, 0, 0, 0.103);
+    border: transparent;
+    border-bottom: 3px solid white;
+    color: white;
+    font-size: 20px;
+}
+button
+{
+    position: absolute;
+    color:white;
+    z-index: 2;
+    right: 5%;
+    top: 5%;
+    font-size: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    height: 30px;
+    border-color: transparent;
+}
+button:hover
+{
+    background-color: rgba(0, 0, 0, 0.198);
+}
+button img
+{
+    width: 25px;
+}
+@media (max-width: 321px)
+{
+    div.nextDay
+    {
+        height: 100px;
+    }
+    img.iconDOW
+    {
+    width: 50px;
+    }
+    div.descriptionDOW
+    {
+        font-size: 11px;
+    }
+}
+@media (min-width: 540px)
+{
+    div.nextDay
+    {
+        height: 150px;
+    }
+    img.weatherPhoto
+    {
+        width: 120px;
+    }
+    img.iconDOW
+    {
+        width: 90px;
+    }
+}
+@media(min-width: 1024px)
+{
+
+    body
+    {
+        height: 100vh;
+    }
+    h1
+    {
+        font-size: 25px;
+    }
+    div.weatherMain
+    {
+        height: 80vh;
+    }
+    div.weatherChild
+    {
+        width: 50%;
+        height: calc(400px / 6);
+    }
+    div.weatherContent
+    {
+        height: 400px;
+        width: 1024px;
+    }
+    div.nextDays
+    {
+        width: 1024px;
+        height: 500px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    div.nextDay
+    {
+        width: calc(1024px / 6);
+        height: 270px;
+    }
+    p.weatherStatus
+    {
+        top: 70%;
+    }
+    img.weatherPhoto
+    {
+        left: 12%;
+        top: -30%;
+        width: 120px;
+    }
+    div.main
+    {
+        height: 100vh;
+    }
+    h3.DOW
+    {
+        margin-left: 0;
+        text-align: center;
+    }
+    div.tempAndWeather
+    {
+        top: -20%;
+    }
+    div.contentDOW
+    {
+        
+        width: 50%;
+        margin-left: 15px;
+    }
+    div.tempDOW
+    {
+        font-size: 25px;
+        margin-right: 2px;
+    }
+    img.iconDOW
+    {
+        width: 80px;
+    }
+}
+@media (min-width:1200px)
+{
+    div.weatherContent
+    {
+        width: 1200px;
+    }
+    div.nextDays
+    {
+        width: 1200px;
+    }
+    div.nextDay
+    {
+        width: calc(1200px /6)
+    }
+    div.tempDOW
+    {
+        font-size: 30px;
+    }
+}
+@media (max-width: 413px)
+{
+    .descriptionDOW
+    {
+        font-size: 13px;
+    }
+}
+
+/* popup z errorem */
+div.popupError
+{
+    position: absolute;
+    top: 20%;
+    border-radius: 40px;
+    color: rgb(0, 0, 0);
+    padding: 30px;
+    font-size: 15px;
+    height: 100px;
+    width: 200px;
+    background-color: snow;
+    display: none;
+    z-index: 2;
+}
+.fa-times
+{
+    color: black;
+    position: absolute;
+    z-index: 2;
+    top: 10%;
+    right: 5%;
+    font-size: 25px;
+}
+div.main
+{
+    display: none;
+    z-index: 1;
+    position: absolute;
+    height: 200vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+div.tempAndWeather
+{
+    position: absolute;
+    right: 5%;
+}
